@@ -1,0 +1,31 @@
+.table{
+    overflow-x: auto;
+    color: #ffff;
+    background-color: #000000;
+    max-width: 1000px;
+}
+
+.table__body {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__cell {
+    border: 1px solid red;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    max-width: 1000px;
+}
+
+.table__header{
+    font-weight: normal;
+    color: red;
+    background-color: #ff000025;
+    max-width: 1000px;
+}
+
+.table__row:hover {
+    background-color: rgb(170, 167, 167);
+}
+

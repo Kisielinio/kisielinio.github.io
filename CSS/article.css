@@ -1,0 +1,20 @@
+.article {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.article__title {
+    margin-top: 50px auto;
+    margin-bottom: 50px auto;
+    max-width: 10000px;
+    font-family: "Arial", sans-serif;
+    text-shadow: 1px 2px 5px white;
+}
+
+.article__border {
+    margin-top: 50px;
+    border: 2px double crimson;
+    max-width: 1000px;
+    padding: 40px;
+    box-shadow: 2px 2px 5px 2px red;
+}
