@@ -1,13 +1,14 @@
-let header__button = document.querySelector(".js-header__button");
-let body = document.querySelector(".js-body");
-let heder__buttonDark = document.querySelector(".js-heder__buttonDark");
-let header__front = document.querySelector(".js-header__front");
-let aside__list = document.querySelector(".js-aside__list");
+{
+const welcome = () => console.log("Witam serdecznie");
 
 
-
-
-header__button.addEventListener("click", () => {
+const toggleBackgroundColor = () => {
+    
+    const body = document.querySelector(".js-body");
+    const heder__buttonDark = document.querySelector(".js-heder__buttonDark");
+    const header__front = document.querySelector(".js-header__front");
+    const aside__list = document.querySelector(".js-aside__list");
+    
     body.classList.toggle("header__button--dark"); 
     header__front.classList.toggle("header__button--dark");
     aside__list.classList.toggle("header__button--dark");
@@ -19,4 +20,15 @@ header__button.addEventListener("click", () => {
     else {
         heder__buttonDark.innerText = "White";
     }
-});
+};
+
+const init = () => {
+    const header__button = document.querySelector(".js-header__button");
+
+    header__button.addEventListener("click", toggleBackgroundColor);
+    welcome();
+};
+
+init();
+
+}
